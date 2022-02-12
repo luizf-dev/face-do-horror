@@ -40,28 +40,30 @@ body{
     text-align: center;
 }
 
-#home h1{
-    font-weight: 900;
-    letter-spacing: -0.07em;
-    margin-bottom: 50px;
-    color: white;
-}
 
 #home .btn-custom{
     border-radius: 500px;
     margin: 4px;    
     border: none;
+    font-weight: 900;
+    width: 200px;
 }
 
 #home .btn-custom:hover{
-    background-color: #587;
+    background-color: #2e3333;
     color: #000;
 }
 
 #home .carousel-control-prev, .carousel-control-next{
     width: 10%;
     color: black;
-    
+    font-weight: 900;    
+}
+
+#home .carousel-control-prev, .carousel-control-next:hover{
+    width: 10%;
+    color: #000;
+    font-weight: 900;  
 }
 
 
@@ -182,17 +184,54 @@ footer .navbar-nav a:hover{
 ------------------------------------*/
 
 /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+@media (max-width: 575.98px) { 
 
     h1{
         font-size: 2em;
     }
 
+    #bg-small-device{
+        background: #2e3333;
+    }
+
     #recursos .row .rotate{
        display: none;
     }
-    
-    
+
+    .mp3 {
+        width: 200px;
+        height: 200px;    
+    }
+
+    audio {
+        width: 200px; 
+    }
+
+    #player img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #player .fotos1{            
+        width: 270px;
+    }
+
+    #player li {
+        width: 200px;
+        border-bottom: solid 2px #ccc;
+        font-size: 15px;       
+        padding-top: 5px;  
+    }
+
+    #player .container {
+        width: 230px;
+        background-color: black;
+        height: 585px;
+        margin-top: 120px;
+        margin-bottom: 20px;
+        box-shadow: 5px 5px 2px #000;
+        padding-bottom: 10px;
+    }    
     
 }
 
