@@ -31,7 +31,15 @@
           <div class="collapse navbar-collapse" id="nav-menu">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html">Sobre</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Sobre
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Biografia</a>
+                  <a class="dropdown-item" href="membros.html">Membros</a>
+                </div>
+              </li>
               <li class="nav-item"><a class="nav-link" href="index.html">Discografia</a></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -52,54 +60,48 @@
 
     <!--**************************************************************************************-->
 
-    <!--Home Início-->
-    <section id="membros" class="d-flex">
+    <!--Membros Início-->
+    <section id="membros">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <div class="membros">
                     <img src="img/diego.png" alt="Diego-vocal">
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <h1 class="mt-2 mb-5 text-center"><span>Diego - </span> Vocal</h1>
-                </div>
-            </div>   
+                    <h1 class="text-center"><span>Diego - </span> Vocal</h1>
+                  </div>
+                </div>         
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <div class="membros">
+                    <img src="img/igor.png" alt="Igor-Bateria">
+                    <h1 class="text-center"><span>Igor - </span> Bateria</h1>
+                  </div>
+                </div>                
+            </div>
             
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-8">
-                    <img src="img/igor.png" alt="Igor-Bateria">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="membros">
+                  <img src="img/silva.png" alt="Silva">
+                  <h1 class="text-center"><span>Silva - </span> Guitar</h1>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <h1 class="mt-2 mb-5 text-center"><span>Igor - </span> Bateria</h1>
+              </div>         
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="membros">
+                  <img src="img/vidal-18-02-2020.jpeg" alt="Vidal">
+                  <h1 class="text-center"><span>Vidal - </span> Vocal</h1>
                 </div>
-            </div> 
-
+              </div>                
+            </div>
+            
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-8">
-                    <img src="img/felipao.png" alt="Felipao-Baixo">
+              <div class="col-sm-12 col-md-6 col-lg-6 offset-md-3">
+                <div class="membros">
+                  <img src="img/felipao.png" alt="Felipão">
+                  <h1 class="text-center"><span> Felipão - </span> Baixo</h1>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <h1 class="mt-2 mb-5 text-center"><span>Felipão - </span> Baixo</h1>
-                </div>
-            </div> 
-
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-8">
-                    <img src="img/silva.png" alt="Silva-Guitarra">
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <h1 class="mt-2 mb-5 text-center"><span>Silva - </span> Guitarra</h1>
-                </div>
-            </div> 
-
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-8">
-                    <img src="img/vidal.png" alt="Vidal-Vocal">
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <h1 class="mt-2 mb-5 text-center"><span>Vidal - </span> Vocal</h1>
-                </div>
-            </div> 
-        </div>
+              </div>                     
+            </div>    
+      </div>
     </section>
     <!--Home Fim-->
 
@@ -120,18 +122,26 @@
             <h4>Menu</h4>
             <ul class="navbar-nav">
               <li><a href="">Home</a></li>
-              <li><a href="">Sobre</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Sobre
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-dark" href="#">Biografia</a>
+                  <a class="dropdown-item text-dark" href="membros.html">Membros</a>
+                </div>
+              </li>
               <li><a href="">Discografia</a></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                   Mídia
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item text-dark" href="#">Fotos</a>
                   <a class="dropdown-item text-dark" href="#">Vídeos</a>
+                  <a class="dropdown-item text-dark" href="#">Fotos</a>
                 </div>
               </li>
-              <li><a href="">Contato</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Contato</a></li>  
             </ul>
           </div>
         
@@ -144,8 +154,9 @@
           </div>
         </div>
       </div>
+
       <div class="rodape">
-        <h5 class="text-center">Face do Horror - 2022 | &copy; - All rights reserved  </h5>
+        <h5 class="text-center">&copy; 2022 Face do Horror - All Rights Reserved  </h5>
         <h6 class="text-center">Developed By - <a class="link" href="https://github.com/luizf-dev" target="_blank">Luiz Fernando Vidal</a></h6>
       </div>
     </footer>
@@ -154,8 +165,8 @@
     <!--**************************************************************************-->
     
     <!-- JavaScript-->
-    <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script defer src="fontawesome/js/all.min.js"></script> 
