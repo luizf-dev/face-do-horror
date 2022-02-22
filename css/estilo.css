@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Permanent+Marker&display=swap');*/
 
+/*@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=New+Rocker&family=Permanent+Marker&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=New+Rocker&family=Permanent+Marker&display=swap');
 
 /* Layout
 ------------------------------*/
@@ -10,7 +13,12 @@ html,body, #home{
 
 body{
     background: #2e3333;
-    font-family: Arial, Helvetica, sans-serif;
+     /*font-family: 'New Rocker', cursive;*/
+    /*font-family: 'Metal Mania', cursive;*/
+    font-family: 'Creepster', cursive;
+    font-size: 1.3rem;
+    letter-spacing: 0.08em;
+    font-weight: normal;    
 }
 
 
@@ -100,7 +108,7 @@ body{
 audio {
     width: 300px;
     margin-top: 10px;
-    background-color: white;
+    background-color: #212529;
     margin-left: -14px;   
 }
 
@@ -118,8 +126,8 @@ audio {
 
 #player li {
     width: 298px;
-    border-bottom: solid 2px #ccc;
-    font-size: 20px;       
+    border-bottom: solid 1px #fff;
+    font-size: 17px;       
     padding-top: 5px; 
 }
 
@@ -127,7 +135,7 @@ audio {
 #player .container {
     width: 330px;
     background-color: black;
-    height: 750px;
+    height: 720px;
     margin-top: 120px;
     margin-bottom: 20px;
 }
@@ -141,25 +149,22 @@ audio {
 
 #player a {
     text-decoration: none;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;            
+    color: #fff;          
 }
 
 #player a:hover{
     color: #2e3333;
-    font-weight: 900;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 #player .active a {
     color: #800;
-    font-weight: 900;
     text-decoration: none;
 }
 
 #player .active a:hover{
     color: #2e3333;
-    font-weight: 900;
     text-decoration: none;
 }
 
@@ -170,32 +175,29 @@ audio {
 ===================================================*/
 
 #membros{
-    padding-top: 100px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    background: #2e3333;   
 }
 
-.membros{
-    background: #000;
-    box-shadow: 3px 3px 2px #000;
+#membros .diego{
+    margin-top: 120px;
+}
+
+#membros .row{
     margin-bottom: 50px;
 }
 
-
 #membros img{
     width: 100%;
-    height: 480px;    
-    padding: 50px;
+    height: 500px; 
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 22px 10px #000;
 }
 
 #membros h1{
     color: #fff;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    font-family: 'Permanent Marker', cursive;
-    margin-top: -45px;
-    text-shadow: 2px 2px 1px #2e3333;
+    text-shadow: 2px 2px 1px #000;
 }
+
 
 /*Membros fim
 ===================================================*/
@@ -260,6 +262,13 @@ footer h6 .link{
     font-weight: bold;
 }
 
+footer .rodape span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+
 /*Footer Inicio
 ---------------------------------------------------------------*/
 
@@ -274,11 +283,7 @@ footer h6 .link{
         background: url(../img/bg-face.jpg);
         background-size: 300%;
         background-repeat: no-repeat;
-    }
-
-    h1{
-        font-size: 2em;
-    }
+    }    
 
     #recursos .row .rotate{
        display: none;
@@ -312,7 +317,7 @@ footer h6 .link{
 
     #player li {
         width: 248px;
-        border-bottom: solid 2px #ccc;
+        border-bottom: solid 1px #fff;
         font-size: 15px;       
         padding-top: 3px;  
     }
@@ -324,7 +329,12 @@ footer h6 .link{
         margin-top: 120px;
         margin-bottom: 20px;
         padding-bottom: 10px;
-    }    
+    } 
+    
+    #membros h1{
+        font-size: 1.3em;
+        text-align: center;        
+    }
 
     footer .rodape{
         background: #2e3333;
@@ -352,15 +362,21 @@ footer h6 .link{
         font-style:italic;
         font-weight: bold;
     }
+
+    footer img{
+        width: 100%;
+    }
     
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
    
-    h1{
-        font-size: 3em;
-    } 
+
+    #membros h1{
+        font-size: 1.3em;
+        text-align: center;        
+    }
 
 
 /*Medium devices (tablets, 768px and up)*/
@@ -374,17 +390,13 @@ footer h6 .link{
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
-    h1{
-        font-size: 5em;
-    }
+
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-    h1{
-        font-size: 6em;
-    }
+  
 }
 
 }
