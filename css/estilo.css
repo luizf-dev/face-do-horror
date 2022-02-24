@@ -17,7 +17,7 @@ body{
     /*font-family: 'Metal Mania', cursive;*/
     font-family: 'Creepster', cursive;
     font-size: 1.3rem;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
     font-weight: normal;    
 }
 
@@ -51,7 +51,7 @@ body{
 #home{
     background: url(../img/01.png);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -60,17 +60,19 @@ body{
 }
 
 
+
 #home .btn-custom{
-    border-radius: 500px;
+    border-radius: 100px;
     margin: 4px;    
     border: none;
     font-weight: 900;
     width: 200px;
+    color: #000;
 }
 
 #home .btn-custom:hover{
     background-color: #2e3333;
-    color: #000;
+    color: #fff;
 }
 
 #home .carousel-control-prev, .carousel-control-next{
@@ -202,6 +204,54 @@ audio {
 /*Membros fim
 ===================================================*/
 
+/*Discografia inicio
+===================================================*/
+#discografia{
+    height: 80%;
+}
+
+
+#discografia .discografia{
+    margin-top: 120px;
+}
+
+
+#discografia .img-modal{
+    border: 1px solid #000;
+    box-shadow: 3px 3px 5px #000;
+}
+
+/*#discografia .modal-discografia{
+    background: #000;
+}*/
+
+#discografia a.btn-modal{
+    font-size: 1.5em;
+    text-shadow: 2px 2px 3px #000;
+}
+
+#discografia h6{
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+}
+
+#discografia h1{
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+    margin-left: 80px;
+    font-size: 1.3em;
+}
+
+#discografia .btn-leia{
+    margin: 10px 0;
+    width: 100%;
+    text-shadow: 2px 2px 3px #000;
+}
+
+/*Discografia fim
+===================================================*/
+
+
 
 
 /*Footer Inicio
@@ -250,16 +300,21 @@ footer .rodape h5{
 }
 
 footer .rodape h6{
-    font-size: 12px;
+    font-size: 19px;
     color: #fff;
     text-shadow: 1px 1px 2px #000;
 }
 
 footer h6 .link{
-    color: black;
+    color: #637074;
     text-shadow: none;
     font-style:italic;
-    font-weight: bold;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #000;
+}
+
+footer h6 .link:hover{
+    font-size: 1.4em;
 }
 
 footer .rodape span{
@@ -357,14 +412,28 @@ footer .rodape span{
     }
 
     footer h6 .link{
-        color: black;
+        color: #637074;
         text-shadow: none;
         font-style:italic;
-        font-weight: bold;
+        font-weight: 900;
+        text-shadow: 1px 1px 2px #000;
     }
 
     footer img{
         width: 100%;
+    }
+
+    #discografia{
+        height: auto;
+    }
+
+    #discografia h1{
+        font-size: 1em;
+        margin-left: 10px;
+    }
+
+    #discografia h6{
+        font-size: 0.6em;
     }
     
 }
@@ -377,6 +446,12 @@ footer .rodape span{
         font-size: 1.3em;
         text-align: center;        
     }
+
+
+    #discografia h1{
+        margin-left: 80px;
+    }
+
 
 
 /*Medium devices (tablets, 768px and up)*/
